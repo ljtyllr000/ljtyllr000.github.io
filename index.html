@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>食物含水量统计</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <script src="js/bootstrap/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
@@ -14,8 +15,8 @@
 <div class="container-fluid">
     <br>
     <div class="row">
-        <div class="col col-sm col-md col-lg">
-            <b>含水量合计（克）：<span id="all_water_content">-</span></b>
+        <div class="col col-sm col-md col-lg" id="total_water_content">
+            <h4><b>含水量合计（克）：<span id="all_water_content">-</span></b></h4>
         </div>
     </div>
 
@@ -48,13 +49,13 @@
 
 <br><br><br><br><br>
 <hr>
-<h2 class="text-center">常见食物含水量</h2>
+<h2 class="text-center">常见食物/水果含水量</h2>
 <div class="container">
     <table class="table table-striped" id="src_table">
         <thead>
         <tr>
             <th scope="col">食物名称</th>
-            <th scope="col">重量（克）</th>
+            <th scope="col">水果/加工后食物重量（克）</th>
             <th scope="col">含水量（克）</th>
         </tr>
         </thead>
@@ -62,5 +63,6 @@
         </tbody>
     </table>
 </div>
+<br><br>
 </body>
 </html>
