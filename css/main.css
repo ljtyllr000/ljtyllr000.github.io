@@ -1,4 +1,4 @@
-.container-fluid {
+.user_input {
     font-size: 25px;
 }
 
@@ -8,6 +8,7 @@
 
 #total_water_content {
     color: red;
+    font-size: 35px;
 }
 
 .food_weight, .food_type {
