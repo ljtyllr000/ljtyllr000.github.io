@@ -91,6 +91,7 @@ function calculateWaterContent(){
 
         }
     }
+    total_food_water_content = total_food_water_content.toFixed(4)
     console.log("含水量合计: " + total_food_water_content)
 
 
