@@ -113,7 +113,6 @@ function calculateWaterContent(){
 
     $('.food_type, .food_weight').change(function() {
         calculateWaterContent()
-
     })
 
 });
