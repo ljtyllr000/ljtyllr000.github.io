@@ -3,9 +3,13 @@
 }
 
 #src_table {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #total_water_content {
     color: red;
+}
+
+.food_weight, .food_type {
+    font-size: 25px;
 }
