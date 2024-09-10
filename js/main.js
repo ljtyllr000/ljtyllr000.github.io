@@ -62,6 +62,11 @@ function calculateWaterContent(){
         row.find('.food_weight').each(function() {
             var food_weight_obj = $(this);
             var food_weight = food_weight_obj.val();
+
+            if(food_weight != "" && isNaN(food_weight)) {
+                alert('加工后食物克重请输入整数')
+                return
+            }
 //            console.log("index: " + index + ",克重: " + food_weight);
 
             food_weight_list.push(food_weight)
@@ -82,11 +87,14 @@ function calculateWaterContent(){
             var tmp_total_content = rate * parseInt(food_weight)
             console.log(food_name + ' 总含水量: ' + tmp_total_content)
 
-            total_food_water_content += total_food_water_content
+            total_food_water_content += tmp_total_content
 
         }
     }
-    console.log(total_food_water_content)
+    console.log("含水量合计: " + total_food_water_content)
+
+
+    $('#all_water_content').text(total_food_water_content)
 
 
 
