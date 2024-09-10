@@ -84,7 +84,7 @@ function calculateWaterContent(){
         if (food_type != 'default' && food_weight != "") {
             var rate = waterContentOfFood[food_type]['rate'];
             var food_name = waterContentOfFood[food_type]['name'];
-            var tmp_total_content = rate * parseInt(food_weight)
+            var tmp_total_content = rate * Number(food_weight)
             console.log(food_name + ' 总含水量: ' + tmp_total_content)
 
             total_food_water_content += tmp_total_content
