@@ -109,7 +109,20 @@ function calculateWaterContent(){
 //        console.log(key + val)
         var option = $('<option>').val(key).text(val.name);
         select.append(option);
+
+
+        // load table
+        var newRow = $('<tr>');
+        newRow.append($('<td>').text(val.name));
+        newRow.append($('<td>').text(100));
+        newRow.append($('<td>').text(parseInt(100 * val.rate)));
+
+        $('#src_table tbody').append(newRow);
+
     });
+
+
+
 
 
     $('.food_type, .food_weight').change(function() {
