@@ -1,11 +1,11 @@
 .container-fluid {
-    font-size: 20px;
-}
-
-#src_table {
     font-size: 25px;
 }
 
+#src_table {
+    font-size: 30px;
+}
+
 #total_water_content {
-    color: red
+    color: red;
 }
